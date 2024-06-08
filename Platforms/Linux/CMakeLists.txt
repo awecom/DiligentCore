@@ -18,6 +18,7 @@ set(SOURCE
 
 add_library(Diligent-LinuxPlatform ${SOURCE} ${INTERFACE} ${PLATFORM_INTERFACE_HEADERS})
 set_common_target_properties(Diligent-LinuxPlatform)
+set_target_properties(Diligent-LinuxPlatform PROPERTIES CXX_VISIBILITY_PRESET default)
 
 target_include_directories(Diligent-LinuxPlatform
 PUBLIC

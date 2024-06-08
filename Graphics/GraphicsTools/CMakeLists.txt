@@ -133,6 +133,7 @@ if(D3D11_SUPPORTED OR D3D12_SUPPORTED)
 endif()
 
 set_common_target_properties(Diligent-GraphicsTools)
+set_target_properties(Diligent-GraphicsTools PROPERTIES CXX_VISIBILITY_PRESET default)
 
 source_group("src" FILES ${SOURCE})
 source_group("interface" FILES ${INTERFACE})

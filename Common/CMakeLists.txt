@@ -78,6 +78,7 @@ if(PLATFORM_LINUX)
 endif()
 
 set_common_target_properties(Diligent-Common)
+set_target_properties(Diligent-Common PROPERTIES CXX_VISIBILITY_PRESET default)
 
 source_group("src" FILES ${SOURCE})
 source_group("include" FILES ${INCLUDE})

@@ -335,6 +335,7 @@ endif()
 
 set_common_target_properties(Diligent-GraphicsEngineVk-shared)
 set_common_target_properties(Diligent-GraphicsEngineVk-static)
+set_target_properties(Diligent-GraphicsEngineVk-shared PROPERTIES CXX_VISIBILITY_PRESET default)
 
 source_group("src" FILES ${SRC})
 source_group("src\\Vulkan Utilities" FILES ${VULKAN_UTILS_SRC})
